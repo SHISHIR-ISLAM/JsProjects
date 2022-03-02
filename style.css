@@ -1,0 +1,100 @@
+*{
+    
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: black;
+   
+}
+
+h1{
+    margin: 30px 0px;
+    font-size: 2.6rem;
+    text-align: center;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.btn-outline{
+    margin-top: 1rem;
+    font-size: 2.5rem;
+    padding: 0.5rem 1rem;
+    background: #000;
+    border: 2px solid tomato;
+    color: #fff;
+    border-radius: 0.3rem;
+    text-transform: uppercase;
+}
+
+
+.input-button{
+    text-align: center;
+}
+
+input{
+    padding: 0.5rem;
+    outline: 0;
+}
+.copy-btn{
+    padding: 0.5rem;
+    font-size: 0.9rem;
+}
+
+
+
+.tost-msg{
+    position: fixed;
+    top: 2rem;
+    right: 2rem;
+    padding: 1rem 2rem;
+    background-color:bisque;
+    box-shadow: 0 0 7px rgba(0,0,0,0.5);
+    border-radius: 0.3rem;
+    font-size: 1.7rem;
+}
+
+
+.tost-msg-in{
+    animation: tost-msg-in 1s ease-in;
+}
+
+
+.tost-msg-out{
+    animation: tost-msg-out 1s ease-in;
+}
+
+
+@keyframes tost-msg-in {
+    from{
+        transform: translateX(200px);
+        opacity: 0;
+    }
+
+    to{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+
+@keyframes tost-msg-out {
+    from{
+        transform: translateX(0px);
+        opacity: 1
+    }
+
+    to{
+        transform: translateX(200px);
+        opacity: 0;
+    }
+}
