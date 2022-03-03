@@ -21,7 +21,7 @@ function main(){
     changeBtn.addEventListener('click', function(){
         bg = genareatHexColor();
         root.style.background= bg;
-        input.value= bg;
+        input.value= bg.substring(1);
     })
 
 // Copy Input Value
@@ -33,13 +33,13 @@ copyBtn.addEventListener('click', function(){
         div.remove();
         // div = null;
     }
-    genarateTostMsg(`${input.value} Copied`)
+    genarateTostMsg(`#${input.value} Copied`)
 });
 // isValidHex key  in input 
 input.addEventListener('keyup', function(e){
     const color = e.target.value;
     if(color && isValied){
-        root.style.background = color;
+        root.style.background = `#${color}`;
     }
 })
 
@@ -78,8 +78,8 @@ function genarateTostMsg(msg){
  */
 
 function isValied(color){
-    if(color.length !== 7) return false;
-    if (color[0] !== '#') return false;
+    if(color.length !== 6) return false;
+    // if (color[0] !== '#') return false;
 
     return /^[1-9A-Fa-f]{6}$/i.test(color);
 

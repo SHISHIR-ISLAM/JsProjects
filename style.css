@@ -36,14 +36,33 @@ h1{
     text-transform: uppercase;
 }
 
+/* INput Section */
+
+.input-group{
+    display: flex;
+    align-items: center;
+    position: relative;
+    
+}
+
+.input-icon{
+    position: absolate;
+    padding: 0.5rem 0.7rem;
+    background: rgba(126, 123, 126, 0.133);
+    border-radius: 0.3rem;
+    box-shadow: 3px 3px 8px rgba(0,0,0,0.5);
+}
+
+
 
 .input-button{
     text-align: center;
 }
 
-input{
+input[type="text"]{
     padding: 0.5rem;
     outline: 0;
+    margin-right: 0.7rem;
 }
 .copy-btn{
     padding: 0.5rem;
