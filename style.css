@@ -54,6 +54,9 @@ h1{
 }
 
 
+label{
+    display: block;
+}
 
 .input-button{
     text-align: center;

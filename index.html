@@ -15,16 +15,35 @@
         Click a button and changes the background color
     </h1>
 
+<!-- input group one -->
+<div class="input-group-label">
+    <label for="hex">Hexadecimal Code</label>
+ </div> <br>
+
     <div class="input-group">
         <div class="input-icon">#</div>
-        <input type="text" class="input-copy">
-        <button class="copy-btn">Copy</button>
+        <input type="text" class="input-copy input-hex">
+        <button class="copy-btn copy-btn-hex">Copy</button>
         <br>
-    </div>
-    <button class="btn-outline" id="change-btn">
+    </div> <br><br>
+<!-- input group two -->
+ <div class="input-group-label">
+    <label for="hex">RGB COLOR CODE</label>
+ </div><br>
+<div class="input-group">
+    <div class="input-icon">#</div>
+    <input type="text" value="rgba(255,255,255,1)" class="input-copy input-rgb" disabled>
+    <button class="copy-btn copy-btn-rgb">Copy</button>
+    <br>
+</div> <br>
+
+<!-- This is main button section -->
+
+<button class="btn-outline" id="change-btn">
         click the button
     </button>
     </div>
+
 
     <script src="main.js"></script>
 </body>
